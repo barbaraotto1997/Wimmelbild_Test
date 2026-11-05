@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#game-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#game-container {
+    position: relative;
+    display: inline-block;
+}
+
+#scene {
+    width: 1000px;
+}
+
+.item {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.debug .item {
+    border: 3px solid transparent;
+}
+
+.debug .found-item {
+    border: 3px solid lime !important;
+    background-color: rgba(0,255,0,0.2) !important;
+}
+
+.found {
+    text-decoration: line-through;
+    color: green;
+    font-weight: bold;
+}
+
+#sidebar {
+    width: 200px;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+}
