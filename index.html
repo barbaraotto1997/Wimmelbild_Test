@@ -5,37 +5,115 @@
     <title>Wimmelbildspiel</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- Für Wartungsarbeiten einblenden, dafür <body> ausblenden
+<body>
+-->
 <body class="debug">
 
-    <button id="debug">
-    Debug an/aus
-</button>
 
-<h1>Musik, Bücher, Games & Streaming</h1>
+<h1>Musik, Bücher, Games, Film & Streaming</h1>
+
 
 <div id="game-wrapper">
+    <div id="picture-frame">
+        <div id="game-container">
+            <img src="images/wimmelbild.png" id="scene">
+        </div>
+    </div>
+    <div id="sidebar-container">
+    
+        <div id="timer">
+            ⏱ Zeit: 0 s
+        </div>
 
-    <div id="game-container">
+        <div id="sidebar">
 
-        <img src="images/wimmelbild.png" id="scene">
+            <h2>Zu finden:</h2>
+
+                <ul id="list">
+                    <li id="Zelda">2 Zelda</li>
+                    <li id="Creeper">Creeper</li>
+                    <li id="Grogu">Grogu</li>
+                    <li id="Katze">Katze</li>
+                    <li id="Tassen">4 Tassen</li>
+                    <li id="Headsets">3 Headsets</li>
+                    <li id="Schallplatten">4 Schallplatten</li>
+                    <li id="Würfel">Würfel</li>
+                    <li id="Thrones">3 Game of Thrones</li>
+                    <li id="Netflix">2 Netflix</li>
+                    <li id="Kamera">Kamera</li>
+                    <li id="Controller">6 Controller</li>
+                    <li id="Globus">Globus</li>
+                </ul>
+        </div>
     </div>
 
-    <div id="sidebar">
-
-        <h2>Zu finden:</h2>
-
-        <ul id="list">
-            <li id="Triforce">Triforce</li>
-            <li id="Creeper">Creeper</li>
-            <li id="Grogu">Grogu</li>
-            <li id="Silas">Silas</li>
-            <li id="Tassen">3 Tassen</li>
-            <li id="Headsets">3 Headsets</li>
-        </ul>
-    </div>
 </div>
 
+<div id="start-overlay"></div>
 
+<div id="start-popup">
+
+    <h2>🎮 Wimmelbild-Challenge</h2>
+
+    <p>
+        Finde alle versteckten Objekte aus den Bereichen
+        Musik, Bücher, Games, Film und Streaming.
+    </p>
+
+    <p>
+        Viel Spaß! 🙂
+    </p>
+
+    <button id="start-button">
+        Spiel starten
+    </button>
+
+</div>
+
+<div id="win-popup" class="hidden">
+
+    <h2>🎉 Geschafft! 🎉</h2>
+
+    <p>
+        Du hast alle Objekte gefunden.
+    </p>
+
+    <p>
+        Benötigte Zeit:
+        <strong>
+            <span id="final-time"></span>
+        </strong>
+        Sekunden
+    </p>
+
+    <p>
+        Benötigte Klicks:
+        <strong>
+            <span id="final-clicks"></span>
+        </strong>
+    </p>
+
+    <p>
+    Trefferquote:
+    <strong>
+        <span id="final-accuracy"></span> %
+    </strong>
+    </p>
+
+    <p>
+        Bewertung:
+        <strong>
+            <span id="final-rating"></span>
+        </strong>
+    </p>
+
+    <button onclick="location.reload()">
+        Nochmal spielen
+    </button>
+
+</div>
 <script src="script.js"></script>
 
 </body>
