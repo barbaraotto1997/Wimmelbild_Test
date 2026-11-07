@@ -343,7 +343,7 @@ startButton.addEventListener("click", () => {
 let foundObjects = 0;
 const totalObjects = objects.length;
 
-let totalClicks = 0;
+let totalClicks = 1;
 let successfulClicks = 0;
 
 let startTime;
