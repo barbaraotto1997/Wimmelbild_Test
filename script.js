@@ -282,8 +282,7 @@ const counters = {
     },
 
     Thrones: {
-        remaining: 3,
-        singular: "Game of Thrones"
+        remaining: 3
     },
 
     Schallplatten: {
