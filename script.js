@@ -149,7 +149,7 @@ const objects = [
     },
 
     {
-        name: "Thrones",
+        name: "Game of Thrones",
         id: "thrones1",
         left: 19,
         top: 47,
@@ -158,7 +158,7 @@ const objects = [
     },
 
     {
-        name: "Thrones",
+        name: "Game of Thrones",
         id: "thrones2",
         left: 29,
         top: 66,
@@ -167,7 +167,7 @@ const objects = [
     },
 
     {
-        name: "Thrones",
+        name: "Game of Thrones",
         id: "thrones3",
         left: 84.5,
         top: 40.4,
